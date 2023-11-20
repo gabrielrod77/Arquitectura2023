@@ -1,6 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include "listac++.h"
+/* 
+Nombre y apellido:Gabriel Rodriguez
+Cedula:30172571
+*/
 
 using namespace std;
 
