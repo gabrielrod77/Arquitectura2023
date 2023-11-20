@@ -1,0 +1,52 @@
+DBMA AF      CBC
+          B0 B1 B2 B3
+6 fallo   -1 -1 6 -1
+8 fallo   8 -1 6 -1
+8 acierto 8 -1 6 -1
+5 fallo   8 5 6 -1
+3 fallo   8 5 6 3
+9 fallo   8 9 6 3
+18 fallo   8 9 18 3
+5 fallo   8 5 18 3
+12 fallo   12 5 18 3
+
+La cache de correspondencia directa produjo 8 fallo(s) y 1 acierto(s)
+
+DBMA AF      CBC
+          C0 C0 C1 C1
+6 fallo   6 -1 -1 -1
+8 fallo   6 8 -1 -1
+8 acierto 6 8 -1 -1
+5 fallo   6 8 5 -1
+3 fallo   6 8 5 3
+9 fallo   6 8 9 3
+18 fallo   18 8 9 3
+5 fallo   18 8 9 5
+12 fallo   18 12 9 5
+
+La cache asociativa por conjuntos produjo 8 fallo(s) y 1 acierto(s)
+
+DBMA AF      CBC
+          B0 B1 B2 B3
+6 fallo   6 -1 -1 -1
+8 fallo   6 8 -1 -1
+8 acierto 6 8 -1 -1
+5 fallo   6 8 5 -1
+3 fallo   6 8 5 3
+9 fallo   9 8 5 3
+18 fallo   9 18 5 3
+5 acierto 9 18 5 3
+12 fallo   9 18 5 12
+
+La cache completamente asociativa produjo 7 fallo(s) y 2 acierto(s)
+
+la cache completamente asociativa tiene la menor cantidad de fallos
+
+
+DBMA= direccion de bloque de memoria accedido
+AF= Acierto o Fallo
+CBC= contenido de los bloques de cache despues de cada acceso
+Bn= bloque n
+Cn= Conjunto n
+-1= Bloque no contiene nada
+* lo que esta en cada bloque de cache es memoria[n], NO es n
